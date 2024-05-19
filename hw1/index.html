@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 1</title>
+    <script src="./script.js" defer></script>
+    <style>
+      img {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">САЙТ</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Главная</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Контакты</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Поиск
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <h1>Заголовок</h1>
+      <h1>Заголовок (класс)</h1>
+      <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">Первый</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Второй</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >Выпадающий вниз</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#scrollspyHeading3">Третий</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#scrollspyHeading4">Четвертый</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#scrollspyHeading5">Пятый</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav
+        id="navbar-example3"
+        class="navbar navbar-light bg-light flex-column align-items-stretch p-3"
+      >
+        <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#item-1">Item 1</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+          </nav>
+          <a class="nav-link" href="#item-2">Item 2</a>
+          <a class="nav-link" href="#item-3">Item 3</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+          </nav>
+        </nav>
+      </nav>
+
+      <div>
+        <div
+          data-bs-spy="scroll"
+          data-bs-target="#navbar-example3"
+          data-bs-offset="0"
+          tabindex="0"
+        >
+          <h4 id="item-1">Item 1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h5 id="item-1-1">Item 1-1</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h5 id="item-1-2">Item 1-2</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h4 id="item-2">Item 2</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h4 id="item-3">Item 3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h5 id="item-3-1">Item 3-1</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h5 id="item-3-2">Item 3-2</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div
+        id="carouselExampleControls"
+        class="carousel slide w-50"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="https://img.freepik.com/free-photo/earth-globe-with-graduation-cap-education-day_23-2150980003.jpg?t=st=1716115225~exp=1716118825~hmac=cebdee0079530b61388d42443e1959c72c6e237e4c64b2868f943e714f9814ad&w=740"
+              class="d-block w-100"
+              alt="IA"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-photo/earth-globe-with-graduation-cap-education-day_23-2150980003.jpg?t=st=1716115225~exp=1716118825~hmac=cebdee0079530b61388d42443e1959c72c6e237e4c64b2868f943e714f9814ad&w=740"
+              class="d-block w-100"
+              alt="IA"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-photo/earth-globe-with-graduation-cap-education-day_23-2150980003.jpg?t=st=1716115225~exp=1716118825~hmac=cebdee0079530b61388d42443e1959c72c6e237e4c64b2868f943e714f9814ad&w=740"
+              class="d-block w-100"
+              alt="IA"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-photo/earth-globe-with-graduation-cap-education-day_23-2150980003.jpg?t=st=1716115225~exp=1716118825~hmac=cebdee0079530b61388d42443e1959c72c6e237e4c64b2868f943e714f9814ad&w=740"
+              class="d-block w-100"
+              alt="Human"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      ></script>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">САЙТ</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Главная</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Контакты</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Поиск
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <h1>Заголовок</h1>
+      <h1>Заголовок (класс)</h1>
+      <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">Первый</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Второй</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >Выпадающий вниз</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#scrollspyHeading3">Третий</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#scrollspyHeading4">Четвертый</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#scrollspyHeading5">Пятый</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav
+        id="navbar-example3"
+        class="navbar navbar-light bg-light flex-column align-items-stretch p-3"
+      >
+        <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#item-1">Item 1</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+          </nav>
+          <a class="nav-link" href="#item-2">Item 2</a>
+          <a class="nav-link" href="#item-3">Item 3</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+          </nav>
+        </nav>
+      </nav>
+
+      <div>
+        <div
+          data-bs-spy="scroll"
+          data-bs-target="#navbar-example3"
+          data-bs-offset="0"
+          tabindex="0"
+        >
+          <h4 id="item-1">Item 1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h5 id="item-1-1">Item 1-1</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h5 id="item-1-2">Item 1-2</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h4 id="item-2">Item 2</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h4 id="item-3">Item 3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h5 id="item-3-1">Item 3-1</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h5 id="item-3-2">Item 3-2</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div
+        id="carouselExampleControls"
+        class="carousel slide w-50"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="https://img.freepik.com/free-photo/earth-globe-with-graduation-cap-education-day_23-2150980003.jpg?t=st=1716115225~exp=1716118825~hmac=cebdee0079530b61388d42443e1959c72c6e237e4c64b2868f943e714f9814ad&w=740"
+              class="d-block w-100"
+              alt="IA"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-photo/earth-globe-with-graduation-cap-education-day_23-2150980003.jpg?t=st=1716115225~exp=1716118825~hmac=cebdee0079530b61388d42443e1959c72c6e237e4c64b2868f943e714f9814ad&w=740"
+              class="d-block w-100"
+              alt="IA"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-photo/earth-globe-with-graduation-cap-education-day_23-2150980003.jpg?t=st=1716115225~exp=1716118825~hmac=cebdee0079530b61388d42443e1959c72c6e237e4c64b2868f943e714f9814ad&w=740"
+              class="d-block w-100"
+              alt="IA"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-photo/earth-globe-with-graduation-cap-education-day_23-2150980003.jpg?t=st=1716115225~exp=1716118825~hmac=cebdee0079530b61388d42443e1959c72c6e237e4c64b2868f943e714f9814ad&w=740"
+              class="d-block w-100"
+              alt="Human"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>
